@@ -1,0 +1,5 @@
+PuLP
+pandas
+openpyxl
+googlemaps
+python-dotenv
