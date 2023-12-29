@@ -3,3 +3,5 @@ pandas
 openpyxl
 googlemaps
 python-dotenv
+nbformat
+plotly

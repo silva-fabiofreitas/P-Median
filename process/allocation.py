@@ -4,7 +4,7 @@ import numpy as np
 
 class Allocation:
     def __init__(self, m, n, p, matrix, w=None):
-        self.matrix = matrix
+        self.matrix = matrix.copy()
         self.m = m
         self.n = n
         self.w = w
@@ -31,7 +31,7 @@ class Allocation:
         c = self.matrix.values
         w = self.w if self.w else [1 for w in range(self.m)]
 
-        self.prob += lpSum([c[i][j] * self.x[(i,j)]  for i in range(self.m) for j in range(self.n)])
+        self.prob += lpSum([c[i][j] * self.x[(i,j)] * w[i] for i in range(self.m) for j in range(self.n)])
      
     def _constraints(self):   
         for i in range(self.m):
