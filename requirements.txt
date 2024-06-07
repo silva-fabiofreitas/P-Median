@@ -5,3 +5,4 @@ googlemaps
 python-dotenv
 nbformat
 plotly
+kaleido
