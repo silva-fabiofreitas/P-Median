@@ -6,3 +6,4 @@ python-dotenv
 nbformat
 plotly
 kaleido
+seaborn
